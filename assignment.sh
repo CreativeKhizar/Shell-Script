@@ -18,7 +18,7 @@ LOGFILE=/tmp/$SCRIPTNAME-$DATE.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-Y="\3[33m"
+Y="\e[33m"
 VALIDATE()
 {
     if [ $0 -ne 0 ]; then
