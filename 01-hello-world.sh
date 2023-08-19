@@ -2,8 +2,8 @@
 
 echo "Hello World, I am Learning DevOps with AWS"
 
-person1="Ramesh"
-person2="Suresh"
+person1="Sachin"
+person2="Rohith"
 
 echo "$person1: Hi Suresh, Good Morning"
 echo "$person2: Good Morning $person2"
