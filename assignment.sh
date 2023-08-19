@@ -22,9 +22,9 @@ Y="\e[33m"
 VALIDATE()
 {
     if [ $1 -ne 0 ]; then
-        echo -e "$RInstalling $2 ... FAILED$N"
+        echo -e "$R Installing $2 ... FAILED$N"
     else
-        echo -e "$GInstalling $2 ... SUCCESS$N"
+        echo -e "$G Installing $2 ... SUCCESS$N"
     fi
 }
 
