@@ -18,8 +18,8 @@ LOGFILE=/tmp/$SCRIPTNAME-$DATE.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-Y="\033[103m"
-VALIDATE
+Y="\3[33m"
+VALIDATE()
 {
     if [ $0 -ne 0 ]; then
         echo -e "$RInstalling $1 ... FAILED$N"
