@@ -29,11 +29,11 @@ fi
 
 # it is our responsibility again to check installation is successful or not
 
-yum install mysql -y &> $LOGFILE
+yum install mysql -y &>> $LOGFILE
 
 VALIDATE $? "INSTALLING MYSQL"
 
-yum install postfix -y &> $LOGFILE
+yum install postfix -y &>> $LOGFILE
 
 VALIDATE $? "INSTALLING POSTFIX"
 
