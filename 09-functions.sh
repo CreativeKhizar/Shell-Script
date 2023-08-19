@@ -3,6 +3,8 @@
 # this function should validate the previous command and inform user it is success or failure
 
 DATE=$(date +%F:%H:%M:%S)
+SCRIPTNAME=$0
+LOGFILE=/tmp/$SCRIPTNAME-$DATE.log
 
 VALIDATE()
 {
