@@ -9,7 +9,7 @@ fi
 
 # it is our responsibility again to check installation is successful or not
 
-yum install mysqllll -y
+yum install mysql -y
 
 if [ $? -ne 0 ]; then
     echo "Installation of mysql is error"
