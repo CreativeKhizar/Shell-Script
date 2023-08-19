@@ -4,11 +4,11 @@
 
 VALIDATE()
 {
-    if [ $? -ne 0 ]; then
-        echo "Installation ... FAILURE"
+    if [ $1 -ne 0 ]; then
+        echo "$2 ... FAILURE"
         exit 1
     else
-        echo "Installation ... SUCCESS"
+        echo "$2 ... SUCCESS"
 fi
 }
 USERID=$(id -u)
@@ -22,16 +22,9 @@ fi
 
 yum install mysql -y
 
-if [ $? -ne 0 ]; then
-    echo "Installation of mysql is error"
-    exit 1
-else
-    echo "Installation of mysql is Sucess"
-fi
-
-VALIDATE $?
+VALIDATE $? "INSTALLING MYSQL"
 
 yum install postfix -y
 
-VALIDATE $?
+VALIDATE $? "INSTALLING POSTFIX"
 
