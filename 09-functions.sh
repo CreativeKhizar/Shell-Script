@@ -5,6 +5,7 @@
 DATE=$(date +%F:%H:%M:%S)
 SCRIPTNAME=$0
 LOGFILE=/tmp/$SCRIPTNAME-$DATE.log
+USERID=$(id -u)
 
 VALIDATE()
 {
@@ -15,7 +16,7 @@ VALIDATE()
         echo "$2 ... SUCCESS"
 fi
 }
-USERID=$(id -u)
+
 
 if [ $USERID -ne 0 ]; then
     echo "ERROR: Please run this script with root access"
@@ -24,11 +25,11 @@ fi
 
 # it is our responsibility again to check installation is successful or not
 
-yum install mysql -y 
+yum install mysql -y &> $LOGFILE
 
 VALIDATE $? "INSTALLING MYSQL"
 
-yum install postfix -y
+yum install postfix -y &> $LOGFILE
 
 VALIDATE $? "INSTALLING POSTFIX"
 
