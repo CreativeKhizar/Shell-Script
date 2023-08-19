@@ -21,7 +21,7 @@ N="\e[0m"
 Y="\033[103m"
 VALIDATE
 {
-    if [ $0 -ne 0]; then
+    if [ $0 -ne 0 ]; then
         echo -e "$RInstalling $1 ... FAILED$N"
     else
         echo -e "$GInstalling $1 ... SUCCESS$N"
