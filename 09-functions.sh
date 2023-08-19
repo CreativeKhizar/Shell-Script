@@ -2,6 +2,8 @@
 
 # this function should validate the previous command and inform user it is success or failure
 
+DATE=$(date +%F:%H:%M:%S)
+
 VALIDATE()
 {
     if [ $1 -ne 0 ]; then
@@ -20,7 +22,7 @@ fi
 
 # it is our responsibility again to check installation is successful or not
 
-yum install mysql -y
+yum install mysql -y 
 
 VALIDATE $? "INSTALLING MYSQL"
 
