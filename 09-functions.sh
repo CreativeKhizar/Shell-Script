@@ -8,7 +8,7 @@ VALIDATE()
         echo "Installation ... FAILURE"
         exit 1
     else
-        echo "Installation ... SUCESS"
+        echo "Installation ... SUCCESS"
 fi
 }
 USERID=$(id -u)
