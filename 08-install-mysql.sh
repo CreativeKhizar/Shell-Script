@@ -7,4 +7,13 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 
-yum install mysql -y
+# it is our responsibility again to check installation is successful or not
+
+yum install mysqllll -y
+
+if [ $? -ne 0 ]; then
+    echo "Installation of mysql is error"
+    exit 1
+else
+    echo "Installation of mysql is Sucess"
+fi
