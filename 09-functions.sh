@@ -14,10 +14,10 @@ N="\e[0m"
 VALIDATE()
 {
     if [ $1 -ne 0 ]; then
-        echo "$R$2 ... FAILURE$N"
+        echo -e "$R$2 ... FAILURE$N"
         exit 1
     else
-        echo "$G$2 ... SUCCESS$N"
+        echo -e "$G$2 ... SUCCESS$N"
 fi
 }
 
