@@ -21,10 +21,10 @@ N="\e[0m"
 Y="\e[33m"
 VALIDATE()
 {
-    if [ $0 -ne 0 ]; then
-        echo -e "$RInstalling $1 ... FAILED$N"
+    if [ $1 -ne 0 ]; then
+        echo -e "$RInstalling $2 ... FAILED$N"
     else
-        echo -e "$GInstalling $1 ... SUCCESS$N"
+        echo -e "$GInstalling $2 ... SUCCESS$N"
     fi
 }
 
