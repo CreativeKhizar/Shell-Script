@@ -35,7 +35,7 @@ if [ $user != 'root' ]; then
 fi
 for i in $@
 do
-    yum list installed $i &>> $LOGFILE
+    yum list installed $i -y &>> $LOGFILE
 
     if [ $? -ne 0 ]; then
         echo "$i is not Installed, lets install"
