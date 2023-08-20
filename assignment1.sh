@@ -13,7 +13,7 @@ user=$(whoami)
 DATE=$(date +%F:%H:%M:%S)
 SCRIPTNAME=$0
 
-LOGFILE=/tmp/$SCRIPTNAME-$DATE.log
+LOGFILE=/home/centos/Shell-Script/shellscript-logs/$SCRIPTNAME-$DATE.log
 
 R="\e[31m"
 G="\e[32m"
