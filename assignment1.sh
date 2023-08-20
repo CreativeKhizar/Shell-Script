@@ -30,7 +30,7 @@ VALIDATE()
 }
 
 if [ $user != 'root' ]; then
-    echo "Failed Run the Sheel Script with root user"
+    echo "Error Please run the Sheel Script with root access"
     exit 1
 fi
 for i in $@
